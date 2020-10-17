@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "SkSwift",
             targets: ["SkSwift"]),
+        .library(
+            name: "Debug",
+            targets: ["Debug"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +25,13 @@ let package = Package(
         .target(
             name: "SkSwift",
             dependencies: []),
+        .target(
+            name: "Debug",
+            dependencies: ["SkSwift"]
+        ),
         .testTarget(
             name: "SkSwiftTests",
             dependencies: ["SkSwift"]),
+        
     ]
 )
