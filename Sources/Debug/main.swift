@@ -7,3 +7,6 @@
 
 import Foundation
 import SkSwift
+
+print(Datasets.get_data_home())
+Datasets.clear_data_home()
